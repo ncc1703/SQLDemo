@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Table name="X_SIN" options="1" version="1 Mar 20 2011">
+	<Fields>
+		<Field>
+			<Name>SEQ_ID</Name>
+			<Datatype>int</Datatype>
+			<Nullable>0</Nullable>
+			<Identity>(1, 1)</Identity>
+			<Purpose>code</Purpose>
+			<Lang/>
+		</Field>
+		<Field>
+			<Name>RANDOM_SORT</Name>
+			<Datatype>uniqueidentifier</Datatype>
+			<Nullable>0</Nullable>
+			<Default>(newid())</Default>
+			<Lang/>
+		</Field>
+		<Field>
+			<Name>SIN_ORIG</Name>
+			<Datatype>varchar(9)</Datatype>
+			<Nullable>0</Nullable>
+			<Purpose/>
+			<Lang/>
+		</Field>
+		<Field>
+			<Name>SIN_NEW</Name>
+			<Datatype>varchar(9)</Datatype>
+			<Nullable>1</Nullable>
+			<Purpose/>
+			<Lang/>
+		</Field>
+	</Fields>
+	<Constraints>
+			<Constraint name="PK_X_SIN" type="primary key clustered">
+			<Fields>
+				<Field order="1">SEQ_ID</Field>
+			</Fields>
+			<SqlCmd/>
+		</Constraint>
+	</Constraints>
+   <Indexes>
+      <Index name="X_SIN_IDX1" type="nonclustered">
+         <Fields>
+            <Field order="1">SIN_ORIG</Field>
+            <Field order="2">SIN_NEW</Field>
+         </Fields>
+      </Index>
+    </Indexes>   
+	<Security/>
+	<Maps/>
+	<Data/>
+</Table>

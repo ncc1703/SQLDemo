@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<Script_List>
+    <!-- ========================================================================================= -->
+    <!-- ========================================== DDL ========================================== -->
+    <!-- ========================================================================================= -->
+   <Scripts>
+           <Name>tX_MGT_ACT_NUM.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_CNAMES.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_FNAMES_ALL.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_FNAMES_F.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_FNAMES_M.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_LNAMES.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>tX_SIN.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+
+    <!-- ========================================================================================= -->
+    <!-- ========================================== DML ========================================== -->
+    <!-- ========================================================================================= -->
+	<Scripts>
+           <Name>fx_GET_NEW_CNAME.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_CODE.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_FNAME.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_LABEL.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_LNAME.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_NUM.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_NEW_SIN.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_GET_SCRAMBLED_VALUE.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+	<Scripts>
+           <Name>fx_OBFUSCATE_NUM.sql</Name>
+           <Run>1</Run>
+		   <Folder></Folder>
+    </Scripts>
+</Script_List>

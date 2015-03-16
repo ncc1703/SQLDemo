@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Table name="X_MGT_ACT_NUM" caption="Management account number DPS map" options="1" version="1.0">
+	<Fields>
+		<Field>
+			<Name>SEQ_ID</Name>
+			<Datatype>int</Datatype>
+			<Nullable>0</Nullable>
+		    <Identity>(1, 1)</Identity>
+		    <Purpose>code</Purpose>
+		    <Lang/>
+			<Docs></Docs>
+		</Field>
+		<Field>
+			<Name caption="Original value">MGT_ACT_NUM_ORIG</Name>
+			<Datatype>varchar(100)</Datatype>
+			<Nullable>0</Nullable>
+			<Purpose/>
+			<Lang/>
+			<Docs></Docs>
+		</Field>
+		<Field>
+			<Name caption="Depersonalized value ">MGT_ACT_NUM_NEW</Name>
+			<Datatype>varchar(100)</Datatype>
+			<Nullable>1</Nullable>
+			<Purpose/>
+			<Lang/>
+			<Docs>Contains value which cannot be reversed into original management account number</Docs>
+		</Field>
+		<Field>
+			<Name>MAX_LEN</Name>
+			<Datatype>int</Datatype>
+			<Nullable>0</Nullable>
+			<Purpose/>
+			<Lang/>
+			<Docs></Docs>
+		</Field>
+		<Field>
+			<Name>RANDOM_SORT</Name>
+			<Datatype>uniqueidentifier</Datatype>
+			<Nullable>0</Nullable>
+			<Default>(newid())</Default>
+			<Lang/>
+			<Docs></Docs>
+		</Field>
+	</Fields>
+	<Constraints>
+		<Constraint name="PK_X_ACT_NUM" type="primary key clustered">
+			<Fields>
+				<Field order="1">SEQ_ID</Field>
+			</Fields>
+			<SqlCmd/>
+		</Constraint>
+	</Constraints>
+   <Indexes>
+      <Index name="X_MGT_ACT_NUM_IDX1" type="nonclustered">
+         <Fields>
+            <Field order="1">MGT_ACT_NUM_ORIG</Field>
+            <Field order="2">MGT_ACT_NUM_NEW</Field>
+         </Fields>
+      </Index>
+    </Indexes>   
+	<Security/>
+	<Maps/>
+	<Data/>
+	<Docs>Management Account Numbers depersonalization map. Remove content of this table to make depersonalization update irreversable</Docs>
+</Table>
